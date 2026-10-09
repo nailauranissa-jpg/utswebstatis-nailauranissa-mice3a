@@ -1,0 +1,205 @@
+
+/* Pengaturan dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #3E2723;
+    background-color: #F5F0E6;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Kolom kiri */
+.left {
+    width: 50%;
+    background-color: #3E2723;
+    color: #F5F0E6;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left h1 {
+    font-size: 28px;
+}
+
+.left-text {
+    margin-bottom: 80px;
+}
+
+.left-text p:first-child {
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    color: #F4C9D6;
+}
+
+.left-text h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.left-text p:last-child {
+    font-size: 15px;
+    color: #F5F0E6;
+}
+
+/* Kolom kanan */
+.right {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #F5F0E6;
+}
+
+.right h1 {
+    font-size: 28px;
+    color: #3E2723;
+    margin-bottom: 35px;
+}
+
+.right h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #6D5550;
+    margin-bottom: 25px;
+}
+
+/* Tombol Google */
+.google-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #FFFFFF;
+    color: #3E2723;
+    border: 1px solid #CDBDB4;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Garis pemisah */
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #CDBDB4;
+}
+
+.divider p {
+    color: #6D5550;
+}
+
+/* Label dan input */
+form > label,
+.password-heading label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+form > input,
+form > .password-heading + input {
+    width: 100%;
+    padding: 12px;
+    color: #3E2723;
+    background-color: #FFFFFF;
+    border: 1px solid #CDBDB4;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+/* Forgot Password */
+.password-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.password-heading a {
+    font-size: 12px;
+    color: #7B4355;
+    margin-bottom: 8px;
+}
+
+/* Remember Me */
+.remember {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.remember input {
+    accent-color: #3E2723;
+}
+
+/* Fokus keyboard */
+input:focus-visible,
+button:focus-visible,
+a:focus-visible {
+    outline: 3px solid #8B5265;
+    outline-offset: 2px;
+}
+
+/* Tombol Sign In */
+.login-button {
+    width: 100%;
+    padding: 13px;
+    background-color: #3E2723;
+    color: #F5F0E6;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #68443D;
+}
+
+/* Sign Up */
+.signup {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.signup a {
+    color: #7B4355;
+    font-weight: bold;
+}
+
+/* Tampilan HP */
+@media (max-width: 767px) {
+    .left {
+        display: none;
+    }
+
+    .right {
+        width: 100%;
+        padding: 25px;
+    }
+}
